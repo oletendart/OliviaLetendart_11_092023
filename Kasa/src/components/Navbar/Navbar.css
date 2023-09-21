@@ -26,7 +26,13 @@ li {
     font-size: 24px;
     color: #FF6060;
     line-height: 34px;
+    cursor: pointer;
 }
+
+li:hover {
+    text-decoration: underline;
+}
+
 li:last-child {
     padding: 0 0 0 12px;
 }
