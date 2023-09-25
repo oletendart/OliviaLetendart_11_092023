@@ -29,3 +29,19 @@
     color: #fff;
     font-weight: 500;
 }
+
+#backgroundCart {
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    width: 1240px;
+    height: auto;
+    margin: 24px auto;
+}
+
+#gridCart {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 48px;
+    grid-row-gap: 48px;
+}

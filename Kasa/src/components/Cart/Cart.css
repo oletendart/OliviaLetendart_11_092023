@@ -1,0 +1,25 @@
+#parentCart {
+    position: relative;
+    height: 340px;
+    width: 340px;
+}
+
+.imageCart {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px;
+}
+
+#titleCart {
+    position: absolute;
+    display: block;
+    z-index: 999;
+    bottom: 24px;
+    color: #fff;
+    line-height: 25px;
+    font-size: 18px;
+    margin-left: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
