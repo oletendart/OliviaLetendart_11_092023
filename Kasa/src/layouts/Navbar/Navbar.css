@@ -29,21 +29,21 @@ li {
     cursor: pointer;
     text-decoration: none;
 }
-a {
+.linkNavbar {
     text-decoration: none;
 }
 
-a:visited {
+.linkNavbar:visited {
     color: #FF6060;
 }
 
-a:active {
+.linkNavbar:active {
     color: #FF6060;
 }
-a:hover {
+.linkNavbar:hover {
     text-decoration: underline;
 }
 
-li:last-child {
+.linkNavbar:last-child {
     padding: 0 0 0 12px;
 }

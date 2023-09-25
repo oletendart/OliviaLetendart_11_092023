@@ -40,6 +40,7 @@
 
 #gridCart {
     width: 100%;
+    padding: 24px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 48px;

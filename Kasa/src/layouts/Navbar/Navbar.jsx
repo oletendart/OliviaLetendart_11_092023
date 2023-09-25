@@ -14,12 +14,12 @@ export default function Navbar() {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">
+                            <Link to="/" className="linkNavbar">
                                 Accueil
                             </Link>
                         </li>
                         <li>
-                            <Link to="/findoutmore">
+                            <Link to="/findoutmore" className="linkNavbar">
                                 A propos
                             </Link>
                         </li>
