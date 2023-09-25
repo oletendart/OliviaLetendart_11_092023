@@ -1,0 +1,14 @@
+.t-dropdown-block {
+    width: 1240px;
+    margin: 24px auto;
+    background-color: #FF6060;
+    border-radius: 5px;
+    padding: 12px;
+}
+.t-dropdown-select p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
