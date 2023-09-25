@@ -7,10 +7,9 @@ export default function RentalPresentation() {
         <>
             <Navbar />
         <div id="parent">
-            <div id="img-background">
+            <img src={backgroundImage}
+                 alt="image background de la bannière" id="background-image"/>
                 <p>Chez vous partout et ailleurs</p>
-            </div>
-
         </div>
             <Footer />
         </>

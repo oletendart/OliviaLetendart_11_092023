@@ -11,7 +11,6 @@ function App() {
     <>
         <BrowserRouter>
             <Routes>
-                {/* Une route logement*/}
                 <Route path='/' element={<RentalPresentation />} />
                 {/*Une route dynamique pour chaque page de logement*/}
                 <Route path="/findoutmore" element={<FindOutMore />} />
