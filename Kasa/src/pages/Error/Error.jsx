@@ -1,9 +1,9 @@
 import Navbar from "../../layouts/Navbar/Navbar.jsx";
 import Footer from "../../layouts/Footer/Footer.jsx";
 import {Link} from "react-router-dom";
-import './NotFound.css'
+import './Error.css'
 
-export default function NotFound() {
+export default function Error() {
     return (
         <>
             <Navbar />

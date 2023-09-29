@@ -1,11 +1,12 @@
-import backgroundCart from '../../assets/backgroundCart.png'
 import './Cart.css'
 
-export default function Cart() {
+export default function Cart({cover, title}) {
     return (
-        <div id="parentCart">
-            <img src={backgroundCart} alt="image de la location" class="imageCart"/>
-            <h3 id="titleCart">Titre de la location</h3>
-        </div>
+        <>
+            <div id="parentCart">
+                <img src={cover} alt="image de la location" className="imageCart"/>
+                <h3 id="titleCart">{title}</h3>
+            </div>
+        </>
     )
 }

@@ -42,7 +42,12 @@
     width: 100%;
     padding: 24px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 340px);
     grid-column-gap: 48px;
     grid-row-gap: 48px;
+}
+
+#idCart {
+    width: 340px;
+    height: 340px;
 }
