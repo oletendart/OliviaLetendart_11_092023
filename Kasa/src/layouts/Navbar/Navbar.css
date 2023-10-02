@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 #navbar {
-    width: 1240px;
+    max-width: 1240px;
     margin: 24px auto;
 }
 

@@ -1,7 +1,18 @@
 #parentCart {
     position: relative;
-    height: 340px;
-    width: 340px;
+    height: 100%;
+    width: 100%;
+}
+
+#parentCart:after {
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    border-radius: 10px;
 }
 
 .imageCart {
@@ -20,6 +31,6 @@
     color: #fff;
     line-height: 25px;
     font-size: 18px;
-    margin-left: 12px;
+    margin: 0 12px;
     font-family: 'Montserrat', sans-serif;
 }

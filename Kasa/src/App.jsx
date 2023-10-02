@@ -13,7 +13,6 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home />} />
-                {/*Une route dynamique pour chaque page de logement*/}
                 <Route path="/logement/:id" element={<PresentationLogement />} />
                 <Route path="/findoutmore" element={<About />} />
                 <Route path="*" element={<Error />} />
