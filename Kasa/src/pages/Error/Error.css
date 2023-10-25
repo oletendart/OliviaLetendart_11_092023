@@ -1,7 +1,6 @@
 #flex404 {
     display: flex;
     flex-direction: column;
-    width: 1240px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -9,8 +8,8 @@
 
 #flex404 h1 {
     color: #FF6060;
-    font-size: 288px;
-    line-height: 410px;
+    font-size: 144px;
+    line-height: 205px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     margin: 24px 0;
@@ -18,11 +17,12 @@
 
 #flex404 h2 {
     color: #FF6060;
-    font-size: 36px;
-    line-height: 52px;
+    font-size: 18px;
+    line-height: 26px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    margin: 24px 0;
+    margin: 12px;
+    text-align: center;
 }
 
 .link404 {
@@ -32,4 +32,22 @@
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     margin: 84px 0;
+}
+
+@media screen and (min-width: 768px) {
+    #flex404 {
+        max-width: 1240px;
+    }
+
+    #flex404 h1 {
+        font-size: 288px;
+        line-height: 410px;
+        margin: 24px 0;
+    }
+
+    #flex404 h2 {
+        font-size: 36px;
+        line-height: 52px;
+    }
+
 }
