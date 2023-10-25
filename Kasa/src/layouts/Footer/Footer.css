@@ -9,14 +9,26 @@
 }
 
 #footer img {
-    margin: 24px 0;
+    margin: 12px 0;
 }
 
 #footer p {
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 12px;
+    line-height: 24px;
     font-weight: 500;
     margin: 12px 0;
+}
+
+@media screen and (min-width: 768px) {
+    #footer p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #footer img {
+        margin: 24px 0;
+    }
+
 }

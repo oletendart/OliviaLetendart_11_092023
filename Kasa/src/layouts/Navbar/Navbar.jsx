@@ -8,7 +8,8 @@ export default function Navbar() {
             <div id="flex-nav">
                 <Link to="/">
                     <img src={logo}
-                         alt="Logo du site"/>
+                         alt="Logo du site"
+                    className="logoSite"/>
                 </Link>
 
                 <nav>

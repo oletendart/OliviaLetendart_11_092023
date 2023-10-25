@@ -1,6 +1,5 @@
 #parent {
-    width: 1240px;
-    margin: 24px auto;
+    margin: 12px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +8,7 @@
 
 #background-image {
     width: 100%;
+    margin: 12px;
     height: 224px;
     border-radius: 24px;
     object-fit: cover;
@@ -24,8 +24,8 @@
     position: absolute;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
-    line-height: 68px;
+    font-size: 24px;
+    line-height: 32px;
     color: #fff;
     font-weight: 500;
 }
@@ -33,17 +33,45 @@
 #backgroundCart {
     background-color: #F6F6F6;
     border-radius: 25px;
-    width: 1240px;
     height: auto;
-    margin: 24px auto;
+    margin: 12px auto;
 }
 
 #gridCart {
     width: 100%;
-    padding: 24px;
+    padding: 12px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 48px;
-    grid-row-gap: 48px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    #parent {
+        max-width: 1240px;
+        margin: 24px auto;
+    }
+
+    #background-image {
+        margin: 0;
+    }
+
+    #backgroundCart {
+        max-width: 1240px;
+        margin: 24px auto;
+    }
+
+    #gridCart {
+        padding: 24px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 48px;
+        grid-row-gap: 48px;
+    }
+
+    #parent p {
+        font-size: 48px;
+        line-height: 68px;
+    }
+
 }
 
