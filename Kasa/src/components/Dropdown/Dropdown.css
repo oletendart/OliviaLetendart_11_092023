@@ -1,14 +1,52 @@
 .t-dropdown-block {
-    width: 1240px;
-    margin: 24px auto;
+    max-width: 1240px;
+    margin: 24px;
     background-color: #FF6060;
     border-radius: 5px;
     padding: 12px;
 }
+
+.t-dropdown-list {
+    display: none;
+    border: 1px solid #DDD;
+    z-index: 10;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .3);
+    list-style: none;
+    padding: 0;
+    height: 150px;
+    overflow: auto;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.t-dropdown-select {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.t-dropdown-select img {
+    cursor: pointer;
+}
+
 .t-dropdown-select p {
     color: #fff;
     font-size: 24px;
     line-height: 32px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
+}
+
+.t-dropdown-item {
+    padding: 5px 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .t-dropdown-block {
+        margin: 24px auto;
+    }
+
 }

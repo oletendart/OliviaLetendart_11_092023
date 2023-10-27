@@ -1,28 +1,28 @@
 import logo from '../../assets/LOGO.png'
 import './Navbar.css'
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 export default function Navbar() {
     return (
         <div id="navbar">
             <div id="flex-nav">
-                <Link to="/">
+                <NavLink to="/">
                     <img src={logo}
                          alt="Logo du site"
                     className="logoSite"/>
-                </Link>
+                </NavLink>
 
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/" className="linkNavbar">
+                            <NavLink to="/" className="linkNavbar" activeClassName="underline">
                                 Accueil
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to="/findoutmore" className="linkNavbar">
+                            <NavLink to="/about" className="linkNavbar">
                                 A propos
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>
