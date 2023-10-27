@@ -6,7 +6,9 @@ export default function PresentationLogement() {
         <>
         <Navbar />
             <div>
-                Presentation d'un logement
+                <section id="caroussel">
+                    <img src="" alt="image caroussel"/>
+                </section>
             </div>
             <Footer/>
         </>
