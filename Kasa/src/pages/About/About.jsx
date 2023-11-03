@@ -14,7 +14,10 @@ export default function About() {
             </div>
 
             <div>
-                <Dropdown />
+                <Dropdown name="Fiabilité" description="123456789"/>
+                <Dropdown name="Respect"  description="hjkhjkhkj"/>
+                <Dropdown name="Service"  description="151464564jkhjkhjkhkj"/>
+                <Dropdown name="Sécurité"  description="tototoototototototototo"/>
             </div>
             <Footer />
         </>

@@ -4,6 +4,7 @@
     background-color: #FF6060;
     border-radius: 5px;
     padding: 12px;
+    width: 100%;
 }
 
 .t-dropdown-list {
@@ -30,6 +31,10 @@
     cursor: pointer;
 }
 
+.t-dropdown-select img:hover {
+    animation: bounceAndRotate 1s infinite linear alternate;
+}
+
 .t-dropdown-select p {
     color: #fff;
     font-size: 24px;
@@ -44,7 +49,27 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@keyframes bounceAndRotate {
+    0% {
+        transform:rotate(0deg);top:-20px;
+    }
+    25% {
+        transform:rotate(0deg);top:-10px;
+    }
+    50% {
+        transform:rotate(0deg);top:0px;
+    }
+    75% {
+        transform:rotate(180deg);top:10px;
+    }
+    100% {
+        transform: rotate(180deg);top:20px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
     .t-dropdown-block {
         margin: 24px auto;
     }
