@@ -1,16 +1,21 @@
 import './Dropdown.css';
 import closedArrow from '../../assets/arrow_back.png'
+import {useState} from "react";
 
 export default function Dropdown(props) {
+    const [dropdown, setDropdown] = useState(false);
+    function handleDropdown(e) {
+        setDropdown(e => !e)
+    }
+
     return (
         <>
             <div className="t-dropdown-block">
                 <div className="t-dropdown-select">
                     <p>{props.name}</p>
-                    <img src={closedArrow} alt="arrow" className="arrow"/>
+                    <img src={closedArrow} alt="arrow" className={dropdown ? 'arrow openDropdown' : 'arrow'} onClick={handleDropdown}/>
                 </div>
-                <ul className="t-dropdown-list">
-
+                <ul className={dropdown ? "t-dropdown-list openDropdown" : 't-dropdown-list'}>
                     <li className="t-dropdown-item">{props.description}</li>
                 </ul>
             </div>
