@@ -1,0 +1,23 @@
+#carousselParent {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+#caroussel {
+    position: relative;
+}
+
+#caroussel .arrow {
+    position: absolute;
+    z-index: 999;
+    top: calc(50% - 80px);
+    margin: 24px;
+}
+
+.arrow.next {
+    right: 0;
+}
+
+.imageCaroussel {
+    filter: brightness(80%);
+}

@@ -41,6 +41,10 @@
     text-decoration: none;
 }
 
+.linkNavbar:link {
+    color: #FF6060;
+}
+
 .linkNavbar:visited {
     color: #FF6060;
 }
@@ -50,6 +54,7 @@
 }
 .linkNavbar:hover {
     text-decoration: underline;
+    color: #FF6060;
 }
 
 @media screen and (min-width: 768px) {

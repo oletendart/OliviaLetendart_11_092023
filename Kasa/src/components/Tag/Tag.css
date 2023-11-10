@@ -1,0 +1,12 @@
+.tagParent .tag {
+    background-color: #FF6060;
+    border-radius: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 24px;
+    margin: 0 4px;
+}
