@@ -1,10 +1,23 @@
-.dropdownBlock {
-    width: 1240px;
+#parentAbout {
+    max-width: 1240px;
     margin: 0 auto;
 }
 
+.dropdownBlock {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    gap: 20px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.dropdownBlock .t-dropdown-block {
+    margin: 0;
+}
+
 #parentFindOut {
-    margin: 12px;
+    margin: 24px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +34,13 @@
 }
 
 @media screen and (max-width: 768px) {
+    #parentAbout {
+        width: 100%;
+        padding: 20px;
+    }
+    #parentFindOut {
+        margin: 0;
+    }
     .dropdownBlock {
         width: 100%;
         margin: 0 auto;

@@ -1,17 +1,32 @@
-#flexLogement {
+#flexParentLogement {
     display: flex;
-    align-items: center;
+    margin: 24px 0;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 12px 0;
-}
-
-#flexRateAndTag {
-    display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
     align-content: center;
     justify-content: space-between;
     align-items: center;
+}
+#caroussel {
+    margin: 24px 0;
+}
+
+#flexLogement {
+    display: flex;
+    flex-direction: column;
+}
+
+#flexRateAndVendeur {
+    display: flex;
+    flex-direction: column;
+}
+
+#flexRateAndVendeur .rate {
+    justify-content: flex-end;
+}
+
+#nameLogement {
+    margin-bottom: 12px;
 }
 
 #nameLogement h1 {
@@ -44,6 +59,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 12px;
 }
 
 .vendeur h3 {
@@ -59,8 +75,45 @@
 #dropdownLogement {
     display: flex;
     flex-direction: row;
+    margin: 24px 0;
 }
 
 #dropdownLogement .t-dropdown-block {
-    margin: 24px 12px;
+    margin: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    #carousselParent {
+        padding: 20px;
+    }
+    #carousselParent #caroussel {
+        margin: 12px 0;
+    }
+    #flexParentLogement {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 12px 0;
+    }
+    #dropdownLogement {
+        display: flex;
+        flex-direction: column;
+        margin: 12px 0;
+    }
+    #dropdownLogement .t-dropdown-block {
+        margin: 12px 0;
+    }
+    #flexRateAndVendeur {
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .tagParent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+    }
 }
