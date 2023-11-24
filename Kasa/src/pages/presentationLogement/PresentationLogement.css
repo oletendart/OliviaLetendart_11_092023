@@ -1,4 +1,18 @@
+#flexLogement {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px 0;
+}
 
+#flexRateAndTag {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
 
 #nameLogement h1 {
     font-family: Montserrat, sans-serif;
@@ -6,16 +20,14 @@
     font-size: 36px;
     line-height: 52px;
     color: #FF6060;
-    margin: 12px 0;
 }
 
-#presentationLogement h2 {
+#nameLogement h2 {
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
     color: #FF6060;
-    margin: 12px 0;
 }
 
 .tagParent {
@@ -30,6 +42,8 @@
 .vendeur {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .vendeur h3 {
@@ -38,6 +52,8 @@
     font-size: 18px;
     color: #FF6060;
     line-height: 26px;
+    text-align: end;
+    margin-right: 12px;
 }
 
 #dropdownLogement {
@@ -46,5 +62,5 @@
 }
 
 #dropdownLogement .t-dropdown-block {
-    margin: 24px;
+    margin: 24px 12px;
 }

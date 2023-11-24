@@ -1,5 +1,4 @@
 .t-dropdown-block {
-    max-width: 1240px;
     margin: 24px;
     background-color: #FF6060;
     border-radius: 5px;
@@ -24,7 +23,6 @@
     color: #FF6060;
     border: none;
     background-color: #F6F6F6;
-    width: 100%;
     height: auto;
 }
 
@@ -77,9 +75,9 @@
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .t-dropdown-block {
-        margin: 24px auto;
+        margin: 12px auto;
     }
 
 }

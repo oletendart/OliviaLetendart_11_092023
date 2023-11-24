@@ -1,3 +1,8 @@
+.dropdownBlock {
+    width: 1240px;
+    margin: 0 auto;
+}
+
 #parentFindOut {
     margin: 12px;
     display: flex;
@@ -7,7 +12,7 @@
 }
 
 #background-image-findOut {
-    width: 100%;
+    width: 1240px;
     height: 224px;
     border-radius: 24px;
     object-fit: cover;
@@ -15,10 +20,10 @@
     filter: brightness(50%);
 }
 
-@media screen and (min-width: 768px) {
-    #parentFindOut {
-        max-width: 1240px;
-        margin: 24px auto;
+@media screen and (max-width: 768px) {
+    .dropdownBlock {
+        width: 100%;
+        margin: 0 auto;
     }
     #background-image-findOut {
         margin: 24px 0;

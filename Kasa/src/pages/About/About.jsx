@@ -13,7 +13,7 @@ export default function About() {
                      alt="image background de la bannière" id="background-image-findOut"/>
             </div>
 
-            <div>
+            <div className="dropdownBlock">
                 <Dropdown name="Fiabilité" description="123456789"/>
                 <Dropdown name="Respect"  description="hjkhjkhkj"/>
                 <Dropdown name="Service"  description="151464564jkhjkhjkhkj"/>

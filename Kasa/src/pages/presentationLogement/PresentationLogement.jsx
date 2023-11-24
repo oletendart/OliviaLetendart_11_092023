@@ -15,26 +15,18 @@ export default function PresentationLogement() {
         <Navbar />
             <div id="carousselParent">
                 <Caroussel />
-                <section id="nameLogement">
-                    <h1>
-                        Cozy loft on the Canal Saint-Martin
-                    </h1>
-                </section>
 
-                <section id="presentationLogement">
-                    <h2>
-                        Paris, Île-de-france
-                    </h2>
+                <section id="flexLogement">
+                    <div id="nameLogement">
+                        <h1>
+                            Cozy loft on the Canal Saint-Martin
+                        </h1>
 
-                    <div className="tagParent">
-                        <Tag name="cozy"/>
-                        <Tag name="douillet"/>
-                        <Tag name="confort"/>
+                        <h2>
+                            Paris, Île-de-france
+                        </h2>
                     </div>
 
-
-                </section>
-                <section id="rateAndVendeur">
                     <div className="vendeur">
                         <h3>
                             Alexandre Dumas
@@ -42,9 +34,20 @@ export default function PresentationLogement() {
                         <img src={imageVendeur}
                              alt="vendeur image"/>
                     </div>
-
-                    <Rate />
                 </section>
+
+                <section id="flexRateAndTag">
+                    <div className="tagParent">
+                        <Tag name="cozy"/>
+                        <Tag name="douillet"/>
+                        <Tag name="confort"/>
+                    </div>
+
+                    <div id="rate">
+                        <Rate />
+                    </div>
+                </section>
+
                 <section id="dropdownLogement">
                     <Dropdown name="Description"/>
                     <Dropdown name="Equipements"/>
