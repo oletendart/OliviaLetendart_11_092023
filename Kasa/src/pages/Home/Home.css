@@ -1,3 +1,7 @@
+#conteneur {
+    max-width: 1240px;
+    margin: 0 auto;
+}
 #parent {
     margin: 12px auto;
     display: flex;

@@ -10,8 +10,9 @@
 #caroussel .arrow {
     position: absolute;
     z-index: 999;
-    top: calc(50% - 80px);
-    margin: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 24px;
 }
 
 .arrow.next {
@@ -24,8 +25,13 @@
 
 @media screen and (max-width: 768px) {
    #caroussel .arrow {
-        top: calc(50% - 52px);
-        margin: 12px;
+        margin: 0 12px;
         width: 40px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #caroussel .arrow {
+        width: 20px;
     }
 }

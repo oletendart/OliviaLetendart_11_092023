@@ -48,7 +48,7 @@ export default function PresentationLogement() {
                 </div>
 
                 <section id="dropdownLogement">
-                    <Dropdown name="Description"/>
+                    <Dropdown name="Description" description="testons pour voir le rendu"/>
                     <Dropdown name="Equipements"/>
                 </section>
             </div>

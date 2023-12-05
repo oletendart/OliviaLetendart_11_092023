@@ -11,6 +11,7 @@ export default function Home() {
 
     return (
         <>
+            <div id="conteneur">
             <Navbar/>
             <div id="parent">
                 <img src={backgroundImage}
@@ -31,6 +32,7 @@ export default function Home() {
                             </Link>
                         ))}
                 </div>
+            </div>
             </div>
             <Footer/>
         </>

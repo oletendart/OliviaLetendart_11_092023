@@ -117,3 +117,28 @@
         margin-bottom: 12px;
     }
 }
+
+@media screen and (max-width: 376px) {
+    #carousselParent {
+        padding: 12px;
+    }
+
+    #nameLogement h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    #nameLogement h2 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #flexRateAndVendeur {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #dropdownLogement {
+        gap: 12px;
+    }
+}

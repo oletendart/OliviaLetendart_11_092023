@@ -15,6 +15,7 @@
 }
 
 #flex-nav ul {
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -67,4 +68,35 @@
         width: 75%;
     }
 
+}
+
+@media screen and (max-width: 376px) {
+    #navbar {
+        margin: 0;
+    }
+    #conteneur {
+        margin: 12px;
+    }
+    .logoSite {
+        width: 50%;
+    }
+
+    #flex-nav li {
+        padding: 0 4px;
+        font-size: 14px;
+        line-height: 12px;
+    }
+
+    #parent {
+        margin: 12px 0;
+    }
+
+    #background-image {
+        margin: 0;
+    }
+
+    #parent p {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
