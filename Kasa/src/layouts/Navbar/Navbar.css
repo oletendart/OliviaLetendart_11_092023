@@ -61,7 +61,6 @@
 @media screen and (max-width: 768px) {
     #navbar {
         max-width: 1240px;
-        margin: 12px 20px;
     }
 
     .logoSite {
