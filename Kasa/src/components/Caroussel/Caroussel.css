@@ -25,18 +25,42 @@
 }
 
 .imageCaroussel {
+    object-fit: cover;
     filter: brightness(80%);
+    border-radius: 24px;
+    min-height: 200px;
+}
+
+#pagination {
+    display: block;
+    z-index: 999;
+    position: absolute;
+    top: 85%;
+    color: #F6F6F6;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 26px;
 }
 
 @media screen and (max-width: 768px) {
    #caroussel .arrow {
         margin: 0 12px;
-        width: 40px;
+        width: 30px;
+    }
+
+    #pagination {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 
 @media screen and (max-width: 376px) {
     #caroussel .arrow {
         width: 20px;
+    }
+    #pagination {
+        display: none;
     }
 }

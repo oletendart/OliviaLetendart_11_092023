@@ -44,6 +44,8 @@ export default function Caroussel() {
                     ))}
                 </ul>
 
+                <p id="pagination">1/5</p>
+
             </section>
         </>
     )

@@ -54,4 +54,21 @@
         margin: 12px auto;
     }
 
+    .t-dropdown-select p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    .t-dropdown-select p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .t-dropdown-list {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

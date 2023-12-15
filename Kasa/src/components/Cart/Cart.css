@@ -21,6 +21,7 @@
     object-fit: cover;
     position: relative;
     border-radius: 10px;
+    min-height: 255px;
 }
 
 #titleCart {

@@ -3,7 +3,7 @@
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
-    align-items: center;
+    padding: 24px;
 }
 
 #flex404 h1 {
@@ -12,7 +12,8 @@
     line-height: 205px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    margin: 24px 0;
+    padding: 24px 0;
+    text-align: center;
 }
 
 #flex404 h2 {
@@ -32,13 +33,10 @@
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     margin: 84px 0;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-    #flex404 {
-        max-width: 1240px;
-    }
-
     #flex404 h1 {
         font-size: 288px;
         line-height: 410px;
@@ -50,4 +48,18 @@
         line-height: 52px;
     }
 
+}
+
+@media screen and (max-width: 376px) {
+    #flex404 {
+        padding: 12px;
+    }
+
+    #flex404 h1 {
+        padding: 52px 0;
+    }
+
+    #flex404 h2 {
+        padding: 48px 0;
+    }
 }
