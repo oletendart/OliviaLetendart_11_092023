@@ -3,7 +3,7 @@ import './Home.css'
 import Footer from "../../layouts/Footer/Footer.jsx";
 import Navbar from "../../layouts/Navbar/Navbar.jsx";
 import Cart from "../../components/Cart/Cart.jsx";
-import logements from '../../data/logements.json'
+import logements from '../../../public/data/logements.json'
 import {Link} from "react-router-dom";
 
 export default function Home() {

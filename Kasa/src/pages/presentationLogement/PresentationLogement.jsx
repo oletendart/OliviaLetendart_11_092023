@@ -6,8 +6,33 @@ import Dropdown from "../../components/Dropdown/Dropdown.jsx";
 import Caroussel from "../../components/Caroussel/Caroussel.jsx";
 import Tag from "../../components/Tag/Tag.jsx";
 import Rate from "../../components/Rate/Rate.jsx";
+import {useEffect, useState} from "react";
 
 export default function PresentationLogement() {
+
+    const [APIState, setAPIState] = useState({
+        error: false,
+        data: undefined
+    })
+
+    useEffect(() => {
+        setAPIState({...APIState})
+        fetch('../data/logements.json')
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                console.log(data)
+                setAPIState({error: true, data: data})
+            })
+    }, []);
+
+    let title = APIState.data[0].title;
+    let location = APIState.data[0].location;
+    let hostPicture = APIState.data[0].host.picture;
+    let host = APIState.data[0].host.name;
+    let description = APIState.data[0].description;
+
     return (
         <>
             <div id="carousselParent">
@@ -18,11 +43,11 @@ export default function PresentationLogement() {
                     <section id="flexLogement">
                         <div id="nameLogement">
                             <h1>
-                                Cozy loft on the Canal Saint-Martin
+                                {title}
                             </h1>
 
                             <h2>
-                                Paris, Île-de-france
+                                {location}
                             </h2>
                         </div>
 
@@ -36,9 +61,9 @@ export default function PresentationLogement() {
                     <section id="flexRateAndVendeur">
                         <div className="vendeur">
                             <h3>
-                                Alexandre Dumas
+                                {host}
                             </h3>
-                            <img src={imageVendeur}
+                            <img src={hostPicture}
                                  alt="vendeur image"/>
                         </div>
                         <div id="rate">
@@ -48,7 +73,7 @@ export default function PresentationLogement() {
                 </div>
 
                 <section id="dropdownLogement">
-                    <Dropdown name="Description" description="testons pour voir le rendu"/>
+                    <Dropdown name="Description" description={description}/>
                     <Dropdown name="Equipements"/>
                 </section>
             </div>
