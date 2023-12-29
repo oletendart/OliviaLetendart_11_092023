@@ -43,6 +43,13 @@
     font-family: "Montserrat", sans-serif;
     line-height: 26px;
 }
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
    #caroussel .arrow {
