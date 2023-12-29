@@ -6,12 +6,14 @@ import Caroussel from "../../components/Caroussel/Caroussel.jsx";
 import Tag from "../../components/Tag/Tag.jsx";
 import Rate from "../../components/Rate/Rate.jsx";
 import {useEffect, useState} from "react";
+import {useParams} from "react-router-dom";
 
 export default function PresentationLogement() {
     const [error, setError] = useState(true);
 
     const [logement, setLogement] = useState();
 
+    const params = useParams();
 
     useEffect( () => {
         const fetchData = async () => {
@@ -22,7 +24,7 @@ export default function PresentationLogement() {
                 }
 
                 const data = await response.json();
-                const toto = data.find((logement) => logement.id === 'c67ab8a7');
+                const toto = data.find((logement) => logement.id === params.id);
 
                 setError(false);
                 setLogement(toto);
@@ -83,7 +85,7 @@ export default function PresentationLogement() {
                             <Dropdown name="Description"
                                       description={logement.description}/>
 
-                                <Dropdown name="Equipements"/>
+                                <Dropdown name="Equipements" equipments={logement.equipments}/>
                         </section>
 
                     </div>)

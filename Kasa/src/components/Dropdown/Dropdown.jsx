@@ -16,7 +16,14 @@ export default function Dropdown(props) {
                     <img src={closedArrow} alt="arrow" className={dropdown ? 'arrow openDropdown' : 'arrow'} onClick={handleDropdown}/>
                 </div>
                 <ul className={dropdown ? "t-dropdown-list openDropdown" : 't-dropdown-list'}>
-                    <li className="t-dropdown-item">{props.description}</li>
+                    {props.equipments ? (
+                        props.equipments.map((equipment, index) => (
+                            <li key={index} className="t-dropdown-item">{equipment}</li>
+                        ))
+                    ) : (
+                        <li className="t-dropdown-item">{props.description}</li>
+                    )
+                    }
                 </ul>
             </div>
         </>
