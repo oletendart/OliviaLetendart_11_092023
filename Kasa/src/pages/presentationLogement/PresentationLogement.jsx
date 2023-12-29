@@ -76,7 +76,7 @@ export default function PresentationLogement() {
                                          alt="vendeur image"/>
                                 </div>
                                 <div id="rate">
-                                    <Rate/>
+                                    <Rate rate={logement.rating}/>
                                 </div>
                             </section>
                         </div>
