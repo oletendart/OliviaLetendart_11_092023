@@ -21,7 +21,7 @@
     object-fit: cover;
     position: relative;
     border-radius: 10px;
-    min-height: 255px;
+    min-height: 340px;
 }
 
 #titleCart {
@@ -34,4 +34,10 @@
     font-size: 18px;
     margin: 0 12px;
     font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 376px) {
+    .imageCart {
+        min-height: 255px;
+    }
 }

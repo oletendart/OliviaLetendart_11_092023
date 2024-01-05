@@ -4,24 +4,15 @@ import './Rate.css'
 
 export default function Rate(props) {
 
-    console.log(props)
+    const rateProps = props.rate;
 
-    if(props === '5') {
-
-    }
+    const stars = [1, 2, 3, 4, 5];
 
     return (
         <>
             <div className="rate">
-                {props === '5' && (
-                    <img src={starActive}
-                         alt="etoile pleine"/>
-                )}
-                <img src={starActive}
-                     alt="etoile pleine" />
-                <img src={starActive} alt="etoile pleine" />
-                <img src={starInactive} alt="etoile vide" />
-                <img src={starInactive} alt="etoile vide" />
+                {stars.map((star) => (<img src={rateProps >= star ? starActive : starInactive}
+                                           alt="etoile pleine"/>))}
             </div>
         </>
     )

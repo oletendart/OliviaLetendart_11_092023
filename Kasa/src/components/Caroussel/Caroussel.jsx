@@ -35,16 +35,7 @@ export default function Caroussel(props) {
                     onClick={handleNext}
                 />
 
-                <ul className="carousselImage">
-                    {props.imgs.map((image, index) => (
-                        <li key={index} className={index === currentIndex ? 'visible' : 'hidden'}>
-                            <img
-                                src={image}
-                                 alt={`image caroussel ${index + 1}`}
-                                 className="imageCaroussel"/>
-                        </li>
-                    ))}
-                </ul>
+                <img className="imageCaroussel" key={currentIndex} src={props.imgs[currentIndex]} alt={`image caroussel ${currentIndex}`}/>
 
                 <p id="pagination">{`${currentIndex + 1} / ${props.imgs.length}`}</p>
 
