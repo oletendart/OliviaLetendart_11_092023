@@ -41,7 +41,6 @@ export default function PresentationLogement() {
     return (
         <>
             {!error ? (
-
                     <div id="carousselParent">
                         <Navbar/>
                         <Caroussel imgs={logement.pictures}/>

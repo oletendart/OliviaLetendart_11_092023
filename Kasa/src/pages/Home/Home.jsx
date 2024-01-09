@@ -3,7 +3,7 @@ import './Home.css'
 import Footer from "../../layouts/Footer/Footer.jsx";
 import Navbar from "../../layouts/Navbar/Navbar.jsx";
 import Cart from "../../components/Cart/Cart.jsx";
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 
 export default function Home() {
@@ -11,6 +11,8 @@ export default function Home() {
     const [error, setError] = useState(true);
 
     const [logement, setLogement] = useState();
+
+    const params = useParams();
 
 
     useEffect( () => {
