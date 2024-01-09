@@ -24,10 +24,10 @@ export default function PresentationLogement() {
                 }
 
                 const data = await response.json();
-                const toto = data.find((logement) => logement.id === params.id);
+                const log = data.find((logement) => logement.id === params.id);
 
                 setError(false);
-                setLogement(toto);
+                setLogement(log);
             } catch (error) {
                 console.error('Error fetching data:', error);
                 setError(true);
@@ -37,8 +37,6 @@ export default function PresentationLogement() {
         fetchData();
     }, []);
 
-
-    console.log(logement)
 
     return (
         <>
