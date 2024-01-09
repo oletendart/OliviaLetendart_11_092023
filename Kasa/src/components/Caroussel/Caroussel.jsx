@@ -23,7 +23,14 @@ export default function Caroussel(props) {
 
     return (
         <>
+            {
+                (props.imgs.length <= 1) ? (
             <section id="caroussel">
+                <img className="imageCaroussel" key={currentIndex} src={props.imgs[currentIndex]}
+                                                                       alt={`image caroussel ${currentIndex}`}/>
+
+            </section>) : (
+                <section id="caroussel">
                 <img src={arrowPrevious}
                      alt="previous arrow"
                      className="arrow"
@@ -38,8 +45,9 @@ export default function Caroussel(props) {
                 <img className="imageCaroussel" key={currentIndex} src={props.imgs[currentIndex]} alt={`image caroussel ${currentIndex}`}/>
 
                 <p id="pagination">{`${currentIndex + 1} / ${props.imgs.length}`}</p>
-
-            </section>
+                </section>
+                    )
+                }
         </>
     )
 }
