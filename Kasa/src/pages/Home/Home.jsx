@@ -50,10 +50,11 @@ export default function Home() {
                     <div id="backgroundCart">
                         <div id="gridCart">
                             {logement && logement.map((el) => (
-                                <Link to={`/logement/${el.id}`}
+                                <Link
+                                    key={el.id}
+                                    to={`/logement/${el.id}`}
                                           id="idCart">
-                                        <Cart key={el.id}
-                                              cover={el.cover}
+                                        <Cart cover={el.cover}
                                               title={el.title}/>
                                     </Link>))
                                 }
