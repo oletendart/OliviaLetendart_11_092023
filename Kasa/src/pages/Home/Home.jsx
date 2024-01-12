@@ -3,17 +3,11 @@ import './Home.css'
 import Footer from "../../layouts/Footer/Footer.jsx";
 import Navbar from "../../layouts/Navbar/Navbar.jsx";
 import Cart from "../../components/Cart/Cart.jsx";
-import {Link, useParams} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 
 export default function Home() {
-
-    const [error, setError] = useState(true);
-
     const [logement, setLogement] = useState();
-
-    const params = useParams();
-
 
     useEffect( () => {
         const fetchData = async () => {
@@ -25,11 +19,9 @@ export default function Home() {
 
                 const data = await response.json();
 
-                setError(false);
                 setLogement(data);
             } catch (error) {
                 console.error('Error fetching data:', error);
-                setError(true);
             }
         };
 
@@ -38,7 +30,6 @@ export default function Home() {
 
     return (
         <>
-            {!error ? (
                 <section>
                 <div id="conteneur">
                     <Navbar/>
@@ -64,10 +55,7 @@ export default function Home() {
                     </div>
                 </div>
                 <Footer/>
-                </section> ) : <div>
-                Les données n'ont pu être chargées
-                </div>
-            }
+                </section>
         </>
             )
             }

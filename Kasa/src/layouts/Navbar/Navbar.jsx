@@ -2,7 +2,6 @@ import logo from '../../assets/LOGO.png'
 import './Navbar.css'
 import {NavLink, useLocation} from "react-router-dom";
 import {useEffect, useState} from "react";
-import {act} from "react-dom/test-utils";
 
 export default function Navbar() {
     const [activePage, setActivePage] = useState('/');

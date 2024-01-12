@@ -11,8 +11,8 @@ export default function Rate(props) {
     return (
         <>
             <div className="rate">
-                {stars.map((star) => (<img src={rateProps >= star ? starActive : starInactive}
-                                           alt="etoile pleine"/>))}
+                {stars.map((star, index) => (<img src={rateProps >= star ? starActive : starInactive}
+                                           alt="etoile pleine" key={index}/>))}
             </div>
         </>
     )

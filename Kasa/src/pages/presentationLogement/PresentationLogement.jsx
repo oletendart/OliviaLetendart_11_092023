@@ -6,13 +6,13 @@ import Caroussel from "../../components/Caroussel/Caroussel.jsx";
 import Tag from "../../components/Tag/Tag.jsx";
 import Rate from "../../components/Rate/Rate.jsx";
 import {useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
+import Error from "../Error/Error.jsx"
+import { useNavigate, useParams} from "react-router-dom";
 
 export default function PresentationLogement() {
     const [error, setError] = useState(true);
-
     const [logement, setLogement] = useState();
-
+    const navigate = useNavigate();
     const params = useParams();
 
     useEffect( () => {
@@ -26,8 +26,12 @@ export default function PresentationLogement() {
                 const data = await response.json();
                 const log = data.find((logement) => logement.id === params.id);
 
-                setError(false);
-                setLogement(log);
+                if(log === undefined) {
+                    navigate('/error');
+                } else {
+                    setError(false);
+                    setLogement(log);
+                }
             } catch (error) {
                 console.error('Error fetching data:', error);
                 setError(true);
@@ -58,8 +62,8 @@ export default function PresentationLogement() {
                                 </div>
 
                                 <div className="tagParent">
-                                    {logement.tags.map(tagname => (
-                                        <Tag name={tagname}/>
+                                    {logement.tags.map((tagname, index) => (
+                                        <Tag name={tagname} key={index}/>
                                     ))}
                                 </div>
                             </section>
