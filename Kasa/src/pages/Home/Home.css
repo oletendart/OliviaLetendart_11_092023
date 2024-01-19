@@ -17,7 +17,7 @@
     border-radius: 24px;
     object-fit: cover;
     position: relative;
-    filter: brightness(50%);
+    filter: brightness(80%);
 }
 
 #parent p {
